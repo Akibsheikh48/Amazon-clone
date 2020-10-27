@@ -1,0 +1,119 @@
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    -30deg,
+    green 0%,
+    gray 50%,
+    black 50%,
+    #607d8b 100%
+  );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.login__logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login__container {
+  width: 320px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+
+}
+.login__container::after{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 15%,
+    transparent 50%,
+    transparent 85%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login__container > form > h4 {
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+.login__container > form > input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 300;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  width: 98%;
+}
+
+.login__container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  
+}
+
+.login__signInButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
+
+.login__registerButton {
+  background: lightblue;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #5d97ad #357796 #089e58;
+  cursor: pointer;
+}
